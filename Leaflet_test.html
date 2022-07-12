@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.7.0/qs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://npmcdn.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+
+<style>
+#mapid { height: 500px; }
+body{
+        margin: 0;    
+        padding: 0;
+    }
+</style>
+
+</head>
+<body>
+    <div id="mapid"></div>
+	<select id="city">
+		<option value="">請選擇縣市</option>
+		<option value="Taipei">臺北市</option>
+		<option value="NewTaipei">新北市</option>
+		<option value="Taoyuan">桃園市</option>
+		<option value="Hsinchu">新竹市</option>
+		<option value="MiaoliCounty">苗栗縣</option>
+		<option value="Taichung">臺中市</option>
+		<option value="Chiayi">嘉義市</option>
+		<option value="Tainan">臺南市</option>
+		<option value="Kaohsiung">高雄市</option>
+		<option value="PingtungCounty">屏東縣</option>
+		<option value="KinmenCounty">金門縣</option>	
+	</select>
+	<input type="submit" value="搜尋" id="getlocat">
+	
+</body>
+
+<script type="text/javascript" src="Sample.js"></script>
+
+</html>
