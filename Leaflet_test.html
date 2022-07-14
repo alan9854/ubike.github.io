@@ -11,7 +11,7 @@
 
 
 <style>
-
+#mapid { height: 100%;width: 100vw; }
 body {
     padding: 0;
     margin: 0;
@@ -20,12 +20,18 @@ html, body, #mapid {
     height: 100%;
     width: 100vw;
 }
+.showui{
+ position: relative!important;
+ top:-50%;
+ z-index: 400;
+}
 </style>
 
 </head>
 <body>
-    <div id="mapid"></div>
-	<select id="city">
+    <div id="mapid" ></div>
+	<div class="showui">
+	<select id="city" >
 		<option value="">請選擇縣市</option>
 		<option value="Taipei">臺北市</option>
 		<option value="NewTaipei">新北市</option>
@@ -39,8 +45,8 @@ html, body, #mapid {
 		<option value="PingtungCounty">屏東縣</option>
 		<option value="KinmenCounty">金門縣</option>	
 	</select>
-	<input type="submit" value="搜尋" id="getlocat">
-	
+	<input type="submit" value="搜尋" id="getlocat" class="">
+	</div>
 </body>
 
 <script type="text/javascript" src="Sample.js"></script>
