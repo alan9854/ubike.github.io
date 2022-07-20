@@ -21,17 +21,34 @@ html, body, #mapid {
     width: 100vw;
 }
 .showui{
- position: relative!important;
- top:-50%;
- z-index: 400;
+ position: relative!important; 
+ z-index: 999;
+ background-color:#1799ae;
+ margin:0;
+ border:0;
+ padding:0;
+}
+.showui_1{
+ position: relative!important; 
+ top:50%;
+ z-index: 999;
+}
+.img_logo
+{
+ width:70px;
+ height:70px;
+ margin:0;
+ border:0;
+ padding:0;
 }
 </style>
 
 </head>
 <body>
-    <div id="mapid" ></div>
+   
 	<div class="showui">
-	<select id="city" >
+	車位查詢:
+	<select id="city" >		
 		<option value="">請選擇縣市</option>
 		<option value="Taipei">臺北市</option>
 		<option value="NewTaipei">新北市</option>
@@ -45,10 +62,31 @@ html, body, #mapid {
 		<option value="PingtungCounty">屏東縣</option>
 		<option value="KinmenCounty">金門縣</option>	
 	</select>
-	<input type="submit" value="搜尋" id="getlocat" class="">
+	<input type="submit" value="目前位置" id="getlocat" class="showui_1">
+	車道查詢:
+	<select id="bikero_city" >		
+		<option value="">請選擇縣市</option>
+		<option value="Taipei">臺北市</option>
+		<option value="NewTaipei">新北市</option>
+		<option value="Taoyuan">桃園市</option>
+		<option value="HsinchuCounty">新竹市</option>
+		<option value="MiaoliCounty">苗栗縣</option>
+		<option value="Taichung">臺中市</option>
+		<option value="Chiayi">嘉義市</option>
+		<option value="Tainan">臺南市</option>
+		<option value="Kaohsiung">高雄市</option>
+		<option value="PingtungCounty">屏東縣</option>
+		<option value="KinmenCounty">金門縣</option>	
+	</select>
+	<select class="form-select" id="bikeRoute" aria-label="選擇自行車道下拉選單">
+	<option value="">請選擇</option>
+	</select>
 	</div>
+	
+	
+	 <div id="mapid" ></div>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wicket/1.3.8/wicket.min.js" integrity="sha512-aaiN+QIXD0N9Id865vSDEfttZJV9v8ZGh7jXMnYI2zbZhkSYOulS4IH0u4pC61/KXT20UedYzL5xi5siIg6mlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="Sample.js"></script>
 
 </html>
