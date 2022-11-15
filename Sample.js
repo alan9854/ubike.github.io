@@ -26,9 +26,9 @@ async function GetAuthorizationHeader() {
   let res = await axios({	  
     method: 'POST',
     url: auth_url,
-	headers: {
+	/*headers: {
       'content-type': 'application/x-www-form-urlencoded',
-    },	
+    },	*/
 	data:qs.stringify(parameter),
     dataType:'JSON',
   })
